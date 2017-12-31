@@ -1,0 +1,25 @@
+<div id="search">
+
+  <h3>Simple Weather App</h1>
+
+  <img src="http://i.imgur.com/VKKm0pn.png" alt="Magnifying Glass" id="searchIcon">
+
+  <form action="/" method="POST">
+      <input type="text"
+
+      onfocus="
+      if(this.placeholder == 'City & State or Zipcode') {
+          this.placeholder = '';
+      }"
+
+      onblur="
+          this.placeholder = 'City & State or Zipcode';
+      "
+
+      placeholder="City & State or Zipcode" id="username" name="username">
+      <input type="submit" value="search" class="button">
+  </form>
+
+  <p>by Alessandro Pepe</p>
+
+</div>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Weather App</title>
+    <style type="text/css" media="screen">
+        @import url(http://fonts.googleapis.com/css?family=Varela+Round);
+        @import url(http://necolas.github.io/normalize.css/3.0.2/normalize.css);
+
+        /* I couldn't get the CSS file to link to the HTML ¯\_(ツ)_/¯ */
+
+        /* ===============TAG STYLES======================== */
+
+        body {
+            background: #6e9cb3;
+            text-align: center;
+            margin: 100px auto;
+            max-width: 25em;
+            padding: 0 50px 50px 50px;
+            font: 18px 'Varela Round', Helvetica, serif;
+            color: #777B7E;
+        }
+
+        input {
+            font-family: 'Varela Round', Helvetica, serif;
+            font-size: 18px;
+            padding: 31px 0;
+            margin: 10px 0;
+            text-align: center;
+            width: 90%;
+            border-radius: 40px;
+            border: 1px solid #D5DDE4;
+            color: #2C3238;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0 0;
+        }
+
+        li:last-child {
+            padding: 22px 0 0 0;
+
+        }
+
+        li {
+            display: inline-block;
+            width: 100%;
+            padding: 22px 0;
+            border-top: 1px solid #D5DDE4;
+        }
+
+        a, a:visited {
+            color: #5FB6E1;
+            text-decoration: none;
+        }
+
+        span {
+            color: #2C3238;
+        }
+
+        /* ===============ID STYLES======================== */
+
+        #searchIcon {
+            width: 50%;
+            border-radius: 50%;
+            margin: 0 25% 0 25%;
+            transition: transform 1s;
+        }
+
+        #searchIcon:hover {
+            transform: rotate(1080deg);
+        }
+
+        #avatar {
+            border-radius: 50%;
+            margin: 0 25% 0 25%
+        }
+
+        #logo {
+            width: 30%;
+            margin: 0 25% 0 25%;
+            transition: transform 0.5s;
+        }
+
+        #logo:hover {
+            transform: scale(1.3);
+        }
+
+        #username {
+            margin: 20px 0 0;
+        }
+
+        #error {
+            width: 100%;
+            padding: 22px 0;
+            background: #d47f7f;
+            color: #820808;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        #profile, #search{
+            background: #fff;
+            border: 1px solid #D5DDE4;
+            border-radius: 40px;
+            padding: 20px 40px;
+            font: 18px, 'Varela Round', Helvetica, serif;
+
+        }
+
+        /* ===============CLASS STYLES======================== */
+
+        .button {
+            border-color: #5FB6E1;
+            background-color: #5FB6E1;
+            color: #fff;
+            width: 70%;
+            transition: all 0.5s;
+            transition-property: background-color, border-color, transform;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            background-color: #5f80e1;
+            border-color: #5f80e1;
+        }
+
+        /* ===============MEDIA QUERIES======================== */
+
+        @media (max-width: 415px) {
+            body {
+              padding: 10px;
+              margin: 25px
+            }
+
+            input {
+              width: 95%;
+            }
+
+            #profile, #search{
+              padding: 20px;
+            }
+        }
+
+    </style>
+
+
+</head>
+<body>
