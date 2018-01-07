@@ -2,7 +2,7 @@ const router = require("./js/router.js");
 const http = require('http');
 require('dotenv').config();
 
-var port = process.env.PORT || 8080
+var port = process.env.PORT || 8080;
 
 http.createServer(function (request, response) {
   router.home(request, response);
