@@ -1,5 +1,4 @@
 const EventEmitter = require("events").EventEmitter;
-const https = require("https");
 const http = require("http");
 const util = require("util");
 
@@ -9,7 +8,7 @@ function Profile(username) {
 
     profileEmitter = this;
 
-    let request = https.get(`https://api.wunderground.com/api/${process.env.MYAPIKEY}/geolookup/conditions/q/${username}.json`, function(response) {
+    let request = http.get(`http://api.wunderground.com/api/${process.env.MYAPIKEY}/geolookup/conditions/q/${username}.json`, function(response) {
         let body = "";
 
         if (response.statusCode !== 200) {
